@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="PopupHistory" constructor="TSPopupHistoryComponent" version="0.0.1" display-name-key="TSPopupHistoryComponent" description-key="TSPopupHistoryComponent description" control-type="standard">
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="fieldLogicalName" display-name-key="Field_Logical_Name" description-key="Field_Logical_Name" of-type="SingleLine.Text" usage="bound" required="true" />
+ 
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/TSPopupHistoryComponent.css" order="1" />
+      <css path="../node_modules/es6dialog/build/es6dialog.css" order="2" />
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>
